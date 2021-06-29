@@ -1,4 +1,5 @@
 # tentoumushi
 myfirsthomepage
-i'am pp2837jp.
-©2021 pp2837jp
+This page is "README.md".
+myhomepage is https://tentomushijp.github.io/mushi/index.html
+Thank you view mypage.
