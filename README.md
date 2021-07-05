@@ -1,5 +1,3 @@
 # tentoumushi
 myfirsthomepage
-This page is "README.md".
-myhomepage is https://tentomushijp.github.io/mushi/index.html
-Thank you view mypage.
+私の自己紹介をしてるホームページです
