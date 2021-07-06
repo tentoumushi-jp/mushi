@@ -13,6 +13,34 @@
     <p>你是机器人吗？</p>
     <form action="link" method="POST">
    <div class="g-recaptcha" data-sitekey="6LdqXBsbAAAAAJIFb92D5XZOYj5q5gBnVhYZKi-I"></div>
+   <li role="presentation">
+<div class="">
+
+<div id="hcaptcha-demo" class="h-captcha" data-sitekey="abe9035e-b776-462d-b127-02798889fdb7" data-callback="onSuccess" data-expired-callback="onExpire"><iframe src="https://newassets.hcaptcha.com/captcha/v1/ffe1f89/static/hcaptcha-checkbox.html#id=00u2ym6uf21km&amp;host=accounts.hcaptcha.com&amp;sentry=true&amp;reportapi=https%3A%2F%2Faccounts.hcaptcha.com&amp;recaptchacompat=true&amp;custom=false&amp;tplinks=on&amp;sitekey=abe9035e-b776-462d-b127-02798889fdb7" title="hCaptchaセキュリティチャレンジのチェックボックスを含むウィジェット" tabindex="0" frameborder="0" scrolling="no" data-hcaptcha-widget-id="00u2ym6uf21km" data-hcaptcha-response="" style="width: 303px; height: 78px; overflow: hidden;"></iframe><textarea id="g-recaptcha-response-00u2ym6uf21km" name="g-recaptcha-response" style="display: none;"></textarea><textarea id="h-captcha-response-00u2ym6uf21km" name="h-captcha-response" style="display: none;"></textarea></div>
+<script>
+                      // success callback
+                      var onSuccess = function(response) {
+                        var errorDivs = document.getElementsByClassName("hcaptcha-error");
+                        if (errorDivs.length) {
+                          errorDivs[0].className = "";
+                        }
+                        var errorMsgs = document.getElementsByClassName("hcaptcha-error-message");
+                        if (errorMsgs.length) {
+                          errorMsgs[0].parentNode.removeChild(errorMsgs[0]);
+                        }
+
+                        var logEl = document.querySelector(".hcaptcha-success");
+                        logEl.innerHTML = "Challenge Success!"
+                      };
+
+                      var onExpire = function(response) {
+                        var logEl = document.querySelector(".hcaptcha-success");
+                        logEl.innerHTML = "Token expired."
+                      };
+                </script>
+
+</div>
+</li>
     <a href="https://discord.gg/nGtDzznfQa" class="button">Submit</a>
    </form>
 
