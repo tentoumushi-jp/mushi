@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <meta name="description" content="pp2837jpです。このページは自己紹介とかです。">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+     <script>
+       function onSubmit(token) {
+         document.getElementById("demo-form").submit();
+       }
+     </script>
   </head>
   <body>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -65,5 +71,9 @@
      <p>私のDiscordサーバー公式ウィジェット</p><br>
       <iframe src="https://discord.com/widget?id=872787898620071936&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
   </section>
+    <form id='demo-form' action="?" method="POST">
+      <button class="g-recaptcha" data-sitekey="your_site_key" data-callback='onSubmit'>Submit</button>
+      <br/>
+    </form>
   </body>
 </html>
